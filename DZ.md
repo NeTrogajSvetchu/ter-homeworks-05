@@ -38,3 +38,13 @@
 
 ![Alt text](png/9.png)
 
+Задание 3.
+
+    1. Исправил ошибки и залил в git
+
+https://github.com/NeTrogajSvetchu/ter-homeworks-04/tree/terraform-hotfix
+
+    2. PR
+
+https://github.com/NeTrogajSvetchu/ter-homeworks-04/pull/1
+

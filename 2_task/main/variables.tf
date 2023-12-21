@@ -20,4 +20,5 @@ variable "default_zone" {
 }
 
 variable "sql_password" {
+  type = string
 }

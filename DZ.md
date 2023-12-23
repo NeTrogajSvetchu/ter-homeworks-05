@@ -48,3 +48,37 @@ https://github.com/NeTrogajSvetchu/ter-homeworks-04/tree/terraform-hotfix
 
 https://github.com/NeTrogajSvetchu/ter-homeworks-04/pull/1
 
+Задание 4.
+
+    1. Корректные IP в переменных
+
+![Alt text](png/10.png)
+
+    2. Не корректные IP в переменных
+   
+![Alt text](png/11.png)
+
+    3. Сами переменные спер у "https://gist.github.com/guillermo-musumeci"
+
+variable "ip" {
+  type = string
+  description = "ip-адрес"
+  default = "192.168.0.1"
+    validation {
+      
+      condition = can(regex("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",var.ip))
+      error_message = "Некорректный IP"
+    }
+}
+variable "ip1" {
+  type = list(string)
+  description = "ip-адрес"
+  default = ["192.168.0.1", "1.1.1.1", "127.0.0.1"]
+    validation {
+      
+      condition = alltrue([for ip in var.ip1: can(regex("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$", ip))])
+      error_message = "Некорректный IP"
+    }
+}
+
+

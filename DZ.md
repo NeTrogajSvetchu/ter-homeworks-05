@@ -81,4 +81,41 @@ variable "ip1" {
     }
 }
 
+Задание 5.
+
+    1. Вывод ошибки 
+   
+![Alt text](png/12.png)
+
+    2. Переменные
+
+variable "in_the_end_there_can_be_only_one" {
+    description="Who is better Connor or Duncan?"
+    type = object({
+        Dunkan = optional(bool)
+        Connor = optional(bool)
+    })
+
+    default = {
+        Dunkan = true //false
+        Connor = false
+    }
+
+    validation {
+        error_message = "There can be only one MacLeod"
+        condition = var.in_the_end_there_can_be_only_one.Dunkan != var.in_the_end_there_can_be_only_one.Connor
+    }
+}
+
+variable "in" {
+    description="321?"
+    type = string
+    default = "ffff"
+
+    validation {
+        error_message = "123"
+        condition = can(regex("^[[:lower:]]+$",var.in))
+    }
+}
+
 

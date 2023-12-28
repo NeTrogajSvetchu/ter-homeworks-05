@@ -72,3 +72,17 @@ variable "in" {
         condition = can(regex("^[[:lower:]]+$",var.in))
     }
 }
+variable "bucket" {
+  type = string
+  default = "kuxar-bucket-1241125"
+}
+
+variable "service_account_name" {
+  type = string
+  default = "testkuxar"
+}
+
+variable "yandex_ydb_database_serverless_name" {
+  type = string
+  default = "test"
+}

@@ -18,6 +18,8 @@
 
     Коммит к заданию 1.
 
+https://github.com/NeTrogajSvetchu/ter-homeworks-05/commit/cb8274feb82114928267fc5b1bff071347e8e365
+
 Задание 2.
 
     1. Создал бакет
@@ -38,6 +40,10 @@
 
 ![Alt text](png/9.png)
 
+Коммит к заданию 2.
+
+https://github.com/NeTrogajSvetchu/ter-homeworks-05/commit/e1d50b8609d811ebaf0436a87eadce5523105624
+
 Задание 3.
 
     1. Исправил ошибки и залил в git
@@ -47,6 +53,10 @@ https://github.com/NeTrogajSvetchu/ter-homeworks-04/tree/terraform-hotfix
     2. PR
 
 https://github.com/NeTrogajSvetchu/ter-homeworks-04/pull/1
+
+Коммит к заданию 3.
+
+https://github.com/NeTrogajSvetchu/ter-homeworks-05/commit/9d34e00eeafe6fb402fc40e1f714af089021bcbd
 
 Задание 4.
 
@@ -80,6 +90,10 @@ variable "ip1" {
       error_message = "Некорректный IP"
     }
 }
+
+Коммит к заданию 4.
+
+https://github.com/NeTrogajSvetchu/ter-homeworks-05/commit/468a2f3342afe20a5fa118c698a9303018baa764
 
 Задание 5.
 
@@ -118,6 +132,9 @@ variable "in" {
     }
 }
 
+Коммит к заданию 5.
+
+https://github.com/NeTrogajSvetchu/ter-homeworks-05/commit/5b5e824d0c25603608f631c57da362ef9d8638a2
 
 Задание 6.
 
@@ -136,3 +153,7 @@ variable "in" {
     3. Перенес в основной main.tf
 
 ![Alt text](png/15.png)
+
+Коммит к заданию 7.
+
+https://github.com/NeTrogajSvetchu/ter-homeworks-05/commit/af5ac6e2b59778c6fce76e2f9a7698b82acbf98c
